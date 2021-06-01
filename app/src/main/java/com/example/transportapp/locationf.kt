@@ -6,24 +6,23 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 
-class form : AppCompatActivity() {
+class locationf : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_form2)
+        setContentView(R.layout.activity_locationf)
 
-        var ptn=findViewById<EditText>(R.id.ptn)
-        var ptn2=findViewById<EditText>(R.id.ptn2)
-        var btnC=findViewById<Button>(R.id.btnC)
-        var btnCon=findViewById<Button>(R.id.btnCon)
+        var ptNow=findViewById<EditText>(R.id.ptNow)
 
-        btnC.setOnClickListener {
+        var btnExit=findViewById<Button>(R.id.btnExi)
+        var btnCont=findViewById<Button>(R.id.btnConti)
+
+        btnExit.setOnClickListener {
             var intent= Intent(baseContext,MainActivity::class.java)
             startActivity(intent)
         }
-        btnCon.setOnClickListener {
-            var intent= Intent(baseContext,locationf::class.java)
+        btnCont.setOnClickListener {
+            var intent= Intent(baseContext,destiny::class.java)
             startActivity(intent)
         }
-
     }
 }

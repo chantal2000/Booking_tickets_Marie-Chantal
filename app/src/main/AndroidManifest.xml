@@ -9,13 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TransportApp">
-        <activity android:name=".location"></activity>
+        <activity android:name=".payment"></activity>
+        <activity android:name=".thetime"></activity>
+        <activity android:name=".locationf" />
+        <activity android:name=".call" />
+        <activity android:name=".time" />
+        <activity android:name=".destiny" />
+        <activity android:name=".form" />
+        <activity android:name=".location" />
         <activity
             android:name=".from"
             android:label="@string/title_activity_from"
             android:theme="@style/Theme.TransportApp.NoActionBar" />
         <activity android:name=".loginform" />
-        <activity android:name=".form" />
         <activity android:name=".signup" />
         <activity android:name=".login" />
         <activity android:name=".welcome" />

@@ -23,6 +23,5 @@ class signup : AppCompatActivity() {
             var intent=Intent(baseContext,loginform::class.java)
             startActivity(intent)
         }
-
     }
 }
